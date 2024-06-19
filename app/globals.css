@@ -17,17 +17,26 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+ 
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+ 
+}
+
+@layer components{
+
+  .CENTER{
+
+    @apply flex justify-center items-center
+  }
+
+  .HOVERMUTED{
+
+    @apply duration-500 group-hover:text-gray-600
   }
 }
